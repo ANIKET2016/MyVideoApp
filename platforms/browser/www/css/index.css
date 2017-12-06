@@ -46,7 +46,11 @@ h1 {
 }
 
 #pageBody{
-    height: 85vh;
+
+}
+
+.footer{
+    position: fixed;
 }
 
 .event {

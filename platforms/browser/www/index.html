@@ -36,9 +36,9 @@
             <p class="event received"></p>
         </div>
 
-        <h1>Video application</h1>
-
-        <div data-role="page" id="main-page">
+       
+        <!-- start of home page -->
+        <div data-role="page" id="home">
 
             <div data-role="header">
                 <h1>My Video App</h1>
@@ -46,16 +46,16 @@
             </div><!--end of header-->
 
             <div data-role="main" class="ui-content" id="pageBody">
-                
+                <h1><center>Home page</center></h1>
             </div><!--end of main -->
 
-            <div data-role="footer" data-them="b">
+            <div data-role="footer" data-them="b" class="footer">
                 <div data-role="navbar" data-grid="c">
                     <ul>
-                        <li><a href="#home" data-icon="home"></a></li>
-                        <li><a href="#video" data-icon="video">Video</a></li>
-                        <li><a href="#weather" data-icon="cloud">Weather</a></li>
-                        <li><a href="#user" data-icon="user">UserInfo</a></li>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active"></a></li>
+                        <li><a href="#video" data-icon="video"></a></li>
+                        <li><a href="#weather" data-icon="cloud"></a></li>
+                        <li><a href="#user" data-icon="user"></a></li>
                     </ul>
                 </div>
 
@@ -65,23 +65,71 @@
 
             
 
-        </div><!-- main-page ends here -->
+        </div><!-- home ends here -->
 
-        <div id="home">
-            <h1><center>Main page body</center></h1>
-        </div><!--end of home-->
 
-        <div id="video">
-            <h1><center>Video page</center></h1>
-        </div>
+        <!-- star of weather page -->
+        <div data-role="page" id="weather">
+            <div data-role="header">
+                <h1>My Video App</h1>
+            </div>
+            <div data-role="main" class="ui-content">     
+                <h1><center>This is weather page</center></h1>
+            </div>
+            <div data-role="footer" data-them="b" class="footer">
+                <div data-role="navbar" data-grid="c">
+                    <ul>
+                        <li><a href="#home" data-icon="home"></a></li>
+                        <li><a href="#video" data-icon="video"></a></li>
+                        <li><a href="#weather" data-icon="cloud" class="ui-btn-active"></a></li>
+                        <li><a href="#user" data-icon="user"></a></li>
+                    </ul>
+                </div>
+            </div><!--end of footer -->
 
-        <div id="weather">
-            <h1><center>Weather page</center></h1>
-        </div>
+        </div><!--end of weather page-->
 
-        <div id="user">
-            <h1><center>User info page</center></h1>
-        </div>
+
+        <div data-role="page" id="user">
+            <div data-role="header">
+                <h1>My Video App</h1>
+            </div>
+            <div data-role="main" class="ui-content">     
+                <h1>Tuser page</h1>
+            </div>
+            <div data-role="footer" data-them="b" class="footer">
+                <div data-role="navbar" data-grid="c">
+                    <ul>
+                        <li><a href="#home" data-icon="home"></a></li>
+                        <li><a href="#video" data-icon="video"></a></li>
+                        <li><a href="#weather" data-icon="cloud"></a></li>
+                        <li><a href="#user" data-icon="user" class="ui-btn-active"></a></li>
+                    </ul>
+                </div>
+            </div><!--end of footer -->
+
+        </div><!--end of user page-->
+
+        <div data-role="page" id="video">
+            <div data-role="header">
+                <h1>My Video App</h1>
+            </div>
+            <div data-role="main" class="ui-content">     
+                <h1>video</h1>
+            </div>
+            <div data-role="footer" data-them="b" class="footer">
+                <div data-role="navbar" data-grid="c">
+                    <ul>
+                        <li><a href="#home" data-icon="home"></a></li>
+                        <li><a href="#video" data-icon="video" class="ui-btn-active"></a></li>
+                        <li><a href="#weather" data-icon="cloud"></a></li>
+                        <li><a href="#user" data-icon="user"></a></li>
+                    </ul>
+                </div>
+            </div><!--end of footer -->
+
+        </div><!--end of video page-->
+    
 
     </div><!-- end of app -->
 
