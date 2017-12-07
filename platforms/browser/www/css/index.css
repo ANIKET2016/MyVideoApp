@@ -36,22 +36,23 @@ body {
 
 
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+
+
+.pageBody{
+    height: 84vh;
 }
 
-#pageBody{
+.ui-page .ui-header{
+    background-color: white !important;
+}
+
+.ui-page .ui-title{
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 120% !important;
 
 }
 
-.footer{
-    position: fixed;
-}
 
 .event {
     /*
