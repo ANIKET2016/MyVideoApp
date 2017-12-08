@@ -56,6 +56,7 @@ $(document).ready(function(){
         return weatherData(location);
     }).then((weatherData)=>{
         console.log(weatherData);
+        renderData(weatherData);
     })
     
 });
@@ -85,4 +86,15 @@ var weatherData = function(location){
 
     })
 };
+
+var renderData = function(data){
+    $("#cityName").append("<center>"+data.name+"</center>");
+    
+    var temperature = Math.round(data.main.temp);
+
+    $("#temp").append("<center>"+temperature+" <span>&#8451;</span></center>");
+
+    $("#w_description").append("<center>"+data.weather[0].description+"</center>")
+};
+
 

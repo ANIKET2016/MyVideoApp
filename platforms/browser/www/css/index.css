@@ -106,3 +106,9 @@ body {
 #weather{
     background-image: url("../img/bg.jpg");
 }
+
+
+#temp{
+    font-size: 500%;
+}
+
