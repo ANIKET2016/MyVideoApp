@@ -112,3 +112,11 @@ body {
     font-size: 500%;
 }
 
+#cityName , #temp,  #w_description{
+    color: white;
+}
+
+#user form {
+    margin-right: 30%;
+    margin-left: 30%
+}
