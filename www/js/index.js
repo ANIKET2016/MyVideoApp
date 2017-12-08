@@ -47,3 +47,42 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+
+$(document).ready(function(){
+    console.log("Hello world...");
+
+    getLocation().then((location)=>{
+        return weatherData(location);
+    }).then((weatherData)=>{
+        console.log(weatherData);
+    })
+    
+});
+
+//get location coordinates
+
+
+var getLocation = function(){
+   return new Promise((resolve, reject)=>{
+        $.post("https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDWO8tV87DC4tCaHOLoADkL71G-jcyBdwk",
+            (data)=>{
+                resolve({lat: data.location.lat, lng: data.location.lng});
+            }
+        );
+   });
+};
+
+var weatherData = function(location){
+    return new Promise((resolve, reject)=>{
+        $.get("http://api.openweathermap.org/data/2.5/weather?lat=" + location.lat + "&lon=" + location.lng + "&units=metric&APPID=2048abd4ff09cb4eaa1f62dc9a077ba6",
+            (weatherData)=>{
+                
+                resolve(weatherData);
+            }
+        );
+
+
+    })
+};
+
